@@ -189,3 +189,6 @@ pruebas.py
 
 # Data files (opcional - puedes comentar estas líneas si quieres incluir los CSV)
 # *.csv
+
+# Mantener estructura de datos organizados
+# Los archivos CSV se mantienen en la carpeta datos/
