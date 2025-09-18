@@ -181,5 +181,11 @@ $RECYCLE.BIN/
 debug.html
 pruebas.py
 
+# Notebooks de prueba y copias (no subir al repositorio)
+*copia*.ipynb
+*test*.ipynb
+*backup*.ipynb
+*experimental*.ipynb
+
 # Data files (opcional - puedes comentar estas líneas si quieres incluir los CSV)
 # *.csv
