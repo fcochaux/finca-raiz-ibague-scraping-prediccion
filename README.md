@@ -78,29 +78,101 @@ jupyter notebook
 1. **Web Scraping**: Ejecuta `01_WSFincaRaizIbague.ipynb` para extraer datos
 2. **Análisis y Predicción**: Ejecuta `02_PrediccionFincaRaizIbague.ipynb` para procesar y modelar
 
-### 📁 Archivos Generados
+### 📁 Estructura de Archivos
 
-Los datos extraídos se guardan con formato de fecha:
-- `YYYYMMDD_enlaces_apartamentos.csv` - Enlaces de propiedades
-- `YYYYMMDD_apartamentos_ibague.csv` - Datos completos de propiedades
+```
+finca-raiz-ibague-scraping-prediccion/
+├── datos/                                    # Carpeta de datos organizados
+│   ├── 20250918_enlaces_apartamentos.csv    # Enlaces de propiedades
+│   └── 20250918_apartamentos_ibague.csv     # Datos completos de propiedades
+├── 01_WSFincaRaizIbague.ipynb               # Web scraping automatizado
+├── 02_PrediccionFincaRaizIbague.ipynb       # ML pipeline avanzado
+├── requirements.txt                          # Dependencias del proyecto
+├── README.md                                 # Documentación
+└── LICENSE                                   # Licencia MIT
+```
+
+### 📊 Datos Generados
+
+Los datos se organizan automáticamente con formato de fecha:
+- **`YYYYMMDD_enlaces_apartamentos.csv`** - URLs de propiedades extraídas
+- **`YYYYMMDD_apartamentos_ibague.csv`** - Dataset completo con características de propiedades
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Python 3.x**
-- **Pandas** - Manipulación de datos
-- **Requests** - Web scraping
-- **LXML** - Parsing HTML
-- **Folium** - Visualización de mapas
-- **Jupyter Notebooks** - Desarrollo interactivo
+### Web Scraping y Procesamiento
+- **Python 3.x** - Lenguaje principal
+- **Pandas** - Manipulación y análisis de datos
+- **Requests** - Web scraping HTTP
+- **LXML** - Parsing HTML eficiente
+- **NumPy** - Computación numérica
 
-## 📊 Características
+### Machine Learning y Análisis
+- **Scikit-learn** - Algoritmos de ML y preprocesamiento
+- **GridSearchCV** - Optimización de hiperparámetros
+- **Pipeline** - Automatización de flujos de trabajo
+- **Cross-validation** - Validación robusta de modelos
 
-- ✅ Extracción automatizada de datos inmobiliarios
-- ✅ Limpieza y procesamiento de datos
-- ✅ Análisis exploratorio de datos (EDA)
-- ✅ Modelado predictivo de precios
-- ✅ Visualizaciones interactivas
-- ✅ Mapas georreferenciados
+### Visualización
+- **Matplotlib** - Visualizaciones estáticas
+- **Seaborn** - Gráficos estadísticos avanzados
+- **Folium** - Mapas interactivos georreferenciados
+
+### Desarrollo
+- **Jupyter Notebooks** - Desarrollo interactivo y documentación
+
+## 📊 Características Avanzadas
+
+### 🔍 Web Scraping Inteligente
+- ✅ **Extracción automatizada** de datos inmobiliarios desde Finca Raíz
+- ✅ **Detección automática** de archivos más recientes
+- ✅ **Manejo robusto** de errores y excepciones
+- ✅ **Estructura organizada** de datos en carpeta dedicada
+
+### 📈 Análisis de Datos Profesional
+- ✅ **Análisis exploratorio completo (EDA)** con visualizaciones
+- ✅ **Ingeniería de características** avanzada
+- ✅ **Limpieza y preprocesamiento** automatizado
+- ✅ **Identificación y tratamiento** de datos atípicos
+- ✅ **Imputación inteligente** de valores faltantes
+
+### 🤖 Machine Learning Avanzado
+- ✅ **Pipeline automatizado** con Scikit-learn
+- ✅ **Múltiples algoritmos**: LinearRegression, Ridge, RandomForest, SVR
+- ✅ **GridSearchCV** para optimización de hiperparámetros
+- ✅ **Validación cruzada** de 5 particiones
+- ✅ **Comparación sistemática** de modelos
+- ✅ **Métricas robustas** de evaluación (RMSE, MAE, R²)
+
+### 📊 Visualización y Mapas
+- ✅ **Visualizaciones interactivas** con Seaborn y Matplotlib
+- ✅ **Mapas georreferenciados** con Folium
+- ✅ **Análisis de distribución** de precios por zonas
+- ✅ **Gráficos estadísticos** avanzados
+
+## 📊 Resultados del Modelamiento
+
+### Algoritmos Implementados
+El pipeline de machine learning incluye los siguientes algoritmos con optimización automática:
+
+| Algoritmo | Características | Optimización |
+|-----------|----------------|--------------|
+| **LinearRegression** | Regresión lineal básica | StandardScaler |
+| **Ridge** | Regresión con regularización L2 | Alpha: [0.1, 1.0, 10.0] |
+| **RandomForest** | Ensemble de árboles de decisión | n_estimators: [50, 100], max_depth: [5, 10, None] |
+| **SVR** | Support Vector Regression | C: [0.1, 1, 10], kernel: [linear, rbf] |
+
+### Métricas de Evaluación
+- **RMSE** (Root Mean Square Error) - Error cuadrático medio
+- **MAE** (Mean Absolute Error) - Error absoluto medio  
+- **R²** (Coefficient of Determination) - Coeficiente de determinación
+- **Validación cruzada** de 5 particiones para evaluación robusta
+
+### Proceso de Optimización
+- **GridSearchCV** para búsqueda exhaustiva de hiperparámetros
+- **Pipeline automatizado** con preprocesamiento integrado
+- **Comparación sistemática** de rendimiento entre modelos
+- **Selección automática** del mejor modelo basado en métricas
 
 ## 🤝 Contribuciones
 
@@ -129,8 +201,23 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## 📈 Roadmap
 
-- [ ] Implementar más fuentes de datos
-- [ ] Mejorar modelos predictivos
-- [ ] Dashboard interactivo
-- [ ] API REST para consultas
-- [ ] Análisis de tendencias temporales
+### ✅ Completado
+- [x] **Web scraping automatizado** desde Finca Raíz
+- [x] **Pipeline de ML avanzado** con múltiples algoritmos
+- [x] **Optimización de hiperparámetros** con GridSearchCV
+- [x] **Validación cruzada** robusta
+- [x] **Organización de datos** en estructura profesional
+- [x] **Análisis exploratorio completo** (EDA)
+- [x] **Ingeniería de características** avanzada
+
+### 🚀 En Desarrollo
+- [ ] **Dashboard interactivo** con Streamlit/Dash
+- [ ] **API REST** para consultas en tiempo real
+- [ ] **Análisis de tendencias temporales**
+- [ ] **Integración con más fuentes** de datos inmobiliarios
+
+### 🔮 Futuro
+- [ ] **Modelos de deep learning** (Neural Networks)
+- [ ] **Predicción de tendencias** del mercado
+- [ ] **Análisis de sentimientos** de descripciones
+- [ ] **Recomendador de propiedades** personalizado
